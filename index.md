@@ -420,7 +420,7 @@ please preview your site before committing, and make sure to run
           See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
           for an example on how to open the Terminal.
           You may want to keep
-          Terminal in your dock for this workshop. Many macOS users perfer <a href="https://iterm2.com">iTerm2</a>.
+          Terminal in your dock for this workshop. Many macOS users perfer <a href="https://iterm2.com">iTerm2</a>, use <code>brew cask install iterm2</code> to install with Homebrew.
         </p>
       </article>
       <article role="tabpanel" class="tab-pane active" id="shell-linux">
