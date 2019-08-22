@@ -335,6 +335,10 @@ please preview your site before committing, and make sure to run
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
 
+<p>
+  If you are using macOS, you are highly recommended to use <a href="https://brew.sh">Homebrew</a>, a package manager for macOS.
+</p>
+
 <div id="shell"> {% comment %} Start of 'shell' section. {% endcomment %}
   <h3>The Bash Shell</h3>
   <p>
@@ -416,7 +420,7 @@ please preview your site before committing, and make sure to run
           See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
           for an example on how to open the Terminal.
           You may want to keep
-          Terminal in your dock for this workshop.
+          Terminal in your dock for this workshop. Many macOS users perfer <a href="https://iterm2.com">iTerm2</a>.
         </p>
       </article>
       <article role="tabpanel" class="tab-pane active" id="shell-linux">
@@ -467,20 +471,11 @@ please preview your site before committing, and make sure to run
         </p>
       </article>
       <article role="tabpanel" class="tab-pane active" id="git-macos">
-        <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">Video Tutorial</a>
-        <p>
-          <strong>For OS X 10.9 and higher</strong>, install Git for Mac
-          by downloading and running the most recent "mavericks" installer from
-          <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
-          Because this installer is not signed by the developer, you may have to
-          right click (control click) on the .pkg file, click Open, and click
-          Open on the pop up window. 
-          After installing Git, there will not be anything in your <code>/Applications</code> folder,
-          as Git is a command line program.
-          <strong>For older versions of OS X (10.5-10.8)</strong> use the
-          most recent available installer labelled "snow-leopard"
-          <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
-        </p>
+        Git is part of the command-line tools for Xcode on macOS. Install
+        Xcode from the Mac App Store. Then run in a terminal: 
+        <code>xcode-select --install</code>. This is needed for almost any
+        development on macOS, since it includes your compilers. If you use homebrew,
+        <code>brew install git</code> will get a slighly newer version.
       </article>
       <article role="tabpanel" class="tab-pane active" id="git-linux">
         <p>
@@ -535,7 +530,7 @@ please preview your site before committing, and make sure to run
           nano is a basic editor and the default that instructors use in the workshop.
           See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
           for an example on how to open nano.
-          It should be pre-installed.
+          It should be pre-installed. Many other editors are available in homebrew and homebrew cask.
         </p>
         <p>
           Others editors that you can use are
@@ -597,6 +592,7 @@ please preview your site before committing, and make sure to run
         </ol>
       </article>
       <article role="tabpanel" class="tab-pane active" id="python-macos">
+        If you use homebrew, run <code>brew install python</code> to get Python3.
         <a href="https://www.youtube.com/watch?v=TcSAln46u9U">Video Tutorial</a>
         <ol>
           <li>Open <a href="https://www.anaconda.com/download/#macos">https://www.anaconda.com/download/#macos</a> with your web browser.</li>
