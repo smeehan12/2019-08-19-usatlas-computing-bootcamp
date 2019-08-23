@@ -1,7 +1,7 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
-                      # Be sure to update the Carpentry type in _config.yml as well.  
+carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").
+                      # Be sure to update the Carpentry type in _config.yml as well.
 venue: "Lawrence Berkeley National Laboratory"        # brief name of host site without address (e.g., "Euphoric State University")
 address: "1 Cyclotron Rd, Berkeley, CA 94720, USA"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
@@ -32,7 +32,7 @@ And run 'make workshop-check' *before* committing to make sure that changes are 
 {% if page.carpentry != site.carpentry %}
 <div class="alert alert-warning">
 You specified <code>carpentry: {{page.carpentry}}</code> in <code>index.md</code> and
-<code>carpentry: {{site.carpentry}}</code> in <code>_config.yml</code>. Make sure you edit both files. After editing <code>_config.yml</code>, you need to run <code>make serve</code> again to 
+<code>carpentry: {{site.carpentry}}</code> in <code>_config.yml</code>. Make sure you edit both files. After editing <code>_config.yml</code>, you need to run <code>make serve</code> again to
 see the changes take effect locally.
 </div>
 {% endif %}
@@ -192,7 +192,7 @@ Display the contact email address set in the configuration file.
 INDICO
 {% endcomment %}
 <p id="indico">
-  <strong>Indico</strong>: In addition to this workshop page, more information and scheduling can be found on 
+  <strong>Indico</strong>: In addition to this workshop page, more information and scheduling can be found on
   the indico event page - <a href="https://indico.cern.ch/event/816946/">https://indico.cern.ch/event/816946/</a>.
 </p>
 
@@ -219,12 +219,12 @@ MATTERMOST
 
 <hr/>
 
-{% comment %} 
-SURVEYS - DO NOT EDIT SURVEY LINKS 
+{% comment %}
+SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
-{% if site.carpentry == "swc" %} 
+{% if site.carpentry == "swc" %}
 <p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% elsif site.carpentry == "dc" %}
@@ -471,13 +471,16 @@ please preview your site before committing, and make sure to run
         </p>
       </article>
       <article role="tabpanel" class="tab-pane active" id="git-macos">
-        Git is part of the command-line tools for Xcode on macOS. Install
-        Xcode from the Mac App Store. Then run in a terminal: 
-        <code>xcode-select --install</code>. This is needed for almost any
-        development on macOS, since it includes your compilers. If you use homebrew,
-        <code>brew install git</code> will get a slighly newer version.
+        <p>
+          Git is part of the command-line tools for Xcode on macOS.
+          Run in a terminal:
+          <code>xcode-select --install</code>. This is needed for almost any
+          development on macOS, since it includes your compilers. If you use homebrew,
+          <code>brew install git</code> will get a slighly newer version.
+          Optionally install Xcode from the Mac App Store.
+        </p>
       </article>
-      <article role="tabpanel" class="tab-pane active" id="git-linux">
+      <article role="tabpanel" class="tab-pane activate" id="git-linux">
         <p>
           If Git is not already available on your machine you can try to
           install it via your distro's package manager. For Debian/Ubuntu run
@@ -498,8 +501,8 @@ please preview your site before committing, and make sure to run
     color-coding of key words. The default text editor on macOS and
     Linux is usually set to Vim, which is not famous for being
     intuitive. If you accidentally find yourself stuck in it, hit
-    the <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>Q</kbd>+<kbd>!</kbd> 
-    (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to 
+    the <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>Q</kbd>+<kbd>!</kbd>
+    (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to
     return to the shell.
   </p>
 
@@ -538,7 +541,7 @@ please preview your site before committing, and make sure to run
           <a href="https://www.sublimetext.com/">Sublime Text</a>.
         </p>
       </article>
-      <article role="tabpanel" class="tab-pane active" id="editor-linux">
+      <article role="tabpanel" class="tab-pane activate" id="editor-linux">
         <p>
           nano is a basic editor and the default that instructors use in the workshop.
           It should be pre-installed.
@@ -592,7 +595,9 @@ please preview your site before committing, and make sure to run
         </ol>
       </article>
       <article role="tabpanel" class="tab-pane active" id="python-macos">
-        If you use homebrew, run <code>brew install python</code> to get Python3.
+        <p>
+          If you use homebrew, run <code>brew install python</code> to get Python3.
+        </p>
         <a href="https://www.youtube.com/watch?v=TcSAln46u9U">Video Tutorial</a>
         <ol>
           <li>Open <a href="https://www.anaconda.com/download/#macos">https://www.anaconda.com/download/#macos</a> with your web browser.</li>
@@ -647,7 +652,7 @@ please preview your site before committing, and make sure to run
 
   <p>
     <a href="https://www.docker.com/">Docker</a> is a powerful tool that allows you
-    to perform a virtualization of your environment but completely in software.  It 
+    to perform a virtualization of your environment but completely in software.  It
     allows you to bundle up the installation of tools for use by others in a uniform way
     and we will be using it throughout this bootcamp.  Installing docker is absolutely
     necessary and there are directions to do this in each operating system.  For those
@@ -683,7 +688,7 @@ please preview your site before committing, and make sure to run
           <br/>
         </p>
       </article>
-      <article role="tabpanel" class="tab-pane" id="docker-macos">
+      <article role="tabpanel" class="tab-pane activate" id="docker-macos">
         <p>
           <br/>
           Download Docker for MacOS <a href="https://docs.docker.com/docker-for-mac/install/">instructions</a>.<br>
@@ -697,7 +702,7 @@ please preview your site before committing, and make sure to run
           <br/>
         </p>
       </article>
-      <article role="tabpanel" class="tab-pane" id="docker-linux">
+      <article role="tabpanel" class="tab-pane activate" id="docker-linux">
         <p>
           <br/>
           Downloading and installing Docker for Linux may be slightly more difficult but please contact the organisers or tutors as soon as possible so they can help with any problems.<br>
