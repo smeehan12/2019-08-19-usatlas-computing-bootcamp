@@ -480,7 +480,7 @@ please preview your site before committing, and make sure to run
           Optionally install Xcode from the Mac App Store.
         </p>
       </article>
-      <article role="tabpanel" class="tab-pane activate" id="git-linux">
+      <article role="tabpanel" class="tab-pane active" id="git-linux">
         <p>
           If Git is not already available on your machine you can try to
           install it via your distro's package manager. For Debian/Ubuntu run
@@ -541,7 +541,7 @@ please preview your site before committing, and make sure to run
           <a href="https://www.sublimetext.com/">Sublime Text</a>.
         </p>
       </article>
-      <article role="tabpanel" class="tab-pane activate" id="editor-linux">
+      <article role="tabpanel" class="tab-pane active" id="editor-linux">
         <p>
           nano is a basic editor and the default that instructors use in the workshop.
           It should be pre-installed.
@@ -688,7 +688,7 @@ please preview your site before committing, and make sure to run
           <br/>
         </p>
       </article>
-      <article role="tabpanel" class="tab-pane activate" id="docker-macos">
+      <article role="tabpanel" class="tab-pane active" id="docker-macos">
         <p>
           <br/>
           Download Docker for MacOS <a href="https://docs.docker.com/docker-for-mac/install/">instructions</a>.<br>
@@ -702,7 +702,7 @@ please preview your site before committing, and make sure to run
           <br/>
         </p>
       </article>
-      <article role="tabpanel" class="tab-pane activate" id="docker-linux">
+      <article role="tabpanel" class="tab-pane active" id="docker-linux">
         <p>
           <br/>
           Downloading and installing Docker for Linux may be slightly more difficult but please contact the organisers or tutors as soon as possible so they can help with any problems.<br>
